@@ -49,7 +49,7 @@ void pngle_on_draw(pngle_t *pngle, uint32_t x, uint32_t y, uint32_t w, uint32_t 
       px++; lbuf[pc++] = color;
     }
   #else
-    tft.drawPixel(x, y, color);
+    tft.drawPixel(x+png_dx, y+png_dy, color);
   #endif
   }
 }
